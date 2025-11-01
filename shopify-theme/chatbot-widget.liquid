@@ -1,0 +1,10 @@
+<!-- Chatbot Widget -->
+<script>
+  window.chatbotConfig = {
+    apiEndpoint: 'TU_URL_DE_VERCEL/api/chat',
+    shop: '{{ shop.permanent_domain }}',
+    storeName: '{{ shop.name }}'
+  };
+</script>
+{{ 'chatbot-widget.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'chatbot-widget.js' | asset_url }}" defer></script>
